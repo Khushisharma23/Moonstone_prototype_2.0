@@ -1,5 +1,4 @@
 import React from "react";
-import userState from React;
 import classes from "./Loading.module.css";
 
 // var loader=document.querySelector(classes.svg_frame)
@@ -8,7 +7,6 @@ import classes from "./Loading.module.css";
 // },2000)
 
 const Loading = () => {
-  const [name,setName]=useState(false)
   return (
     <div className={classes.svg_frame}>
         <h1>EMBRACE</h1>
