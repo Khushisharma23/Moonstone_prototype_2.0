@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(Quantum.otf);
+  src: url(Rhesmanisa.otf);
 }
 
 .hero {
@@ -13,8 +13,12 @@
   /* margin-top: 400px; */
 }
 .hero_tag{
+  text-shadow: 1px 1px 1px blue, 0 0 0.5em rgba(0, 0, 255, 0.671), 0 0 0.5em rgba(1, 1, 255, 0.644);
   color: rgb(255, 255, 255);
-  font-size: 13vw;
+  font-size: 21vw;
+  font-family: myFirstFont;
+  font-weight: 100;
+  
 }
 
 .herobox {

@@ -14,6 +14,8 @@ import Register from "./components/common/Register/Register";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Loading from "./components/common/Loading/Loading";
 import Popup from "./components/common/Popup/Popup";
+import loadingClass from "./components/common/Loading/Loading.module.css";
+import userState from React;
 // import SwupOverlayTheme from "@swup/overlay-theme";
 // import Swup from "swup";
 /* Google Analytics */
@@ -37,8 +39,8 @@ const App = () => {
     // console.log(location);
   }, [location]);
   const [loading, setLoading] = useState(true);
-
-  setTimeout(() => setLoading(false), 3900);
+  const [name,setName]=useState(false)
+  setTimeout(() => {setLoading(false),setName(true)}, 2000);
   useEffect(() => {});
   return (
     <>

@@ -51,7 +51,7 @@ const Hero = () => {
         <div className={classes.headerbox}>
           {/* <h1 className={classes.heading}>Sambhav</h1> */}
           {/* <img src={text_img} className={classes.text_img} alt="text_img" /> */}
-          <h1 className={classes.hero_tag}><i>MOONSTONE</i></h1>
+          <h1 className={classes.hero_tag}><i>Moonstone</i></h1>
           <h4 className={classes.caption}>Unlock Your Brilliance:
             </h4>
           <p className={classes.date}>Register Now for Moonstone</p>
