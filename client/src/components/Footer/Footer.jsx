@@ -1,22 +1,22 @@
 import React from "react";
-import sambhavLogo from "../../assets/Logo.png";
-import grabbitslogo from "../../assets/grabbits.png";
+import moonstonelogo from "../../assets/Logo.png";
+import medicapslogo from "../../assets/medi-logo.png";
 import classes from "./Footer.module.css";
 
-const sambhavinsta = "https://www.instagram.com/sambhav_dypcoe/";
-const sambhavlinkedin = "https://www.linkedin.com/company/sambhav-tech-fest/";
+const moonstoneinsta = "https://www.instagram.com/moonstone_medicaps/";
+// const sambhavlinkedin = "https://www.linkedin.com/company/sambhav-tech-fest/";
 // const sambhavitwitter=''
 
-const grabbitinsta = "https://www.instagram.com/grabbits_/";
-const grabbitlinkedin = "https://www.linkedin.com/company/grabbits/";
-const grabbittwitter = "https://twitter.com/grabbits_";
-const grabbitwebsite = "https://grabbits.vercel.app/";
+const mediinsta = "https://www.instagram.com/medicaps_university/";
+const medilinkedin = "https://www.linkedin.com/school/medicaps-university-indore/";
+const meditwitter = "https://twitter.com/caps_medi";
+const mediwebsite = "https://www.medicaps.ac.in/";
 
 const spiderurl = "https://www.linkedin.com/in/om-gawande/";
 const saurabh = "https://www.linkedin.com/in/saurabh-barde-5b617321a/";
 const sanyog = "https://www.linkedin.com/in/sanyog-mahajan-8288a7204/";
 
-const grabbiturl = "https://www.grabbitdypcoe.in";
+const mediurl = "https://www.medicaps.ac.in/";
 const Footer = () => {
   return (
     <div className={classes.footer_outer}>
@@ -24,49 +24,22 @@ const Footer = () => {
         <div className={classes.footer_first}>
           <div className={classes.footer_sambhav_image_div}>
             <div>
-              <img
-                className={classes.footer_sambhav_image}
-                src={sambhavLogo}
-                alt="sambhavLogo"
-              ></img>
+              <img className={classes.footer_sambhav_image} src={moonstonelogo} alt="moonstonelogo"></img>
             </div>
-            <div>
-              {/* <h1 className={classes.footer_sambhav}>SAMBHAV'23</h1> */}
-            </div>
+            <div>{/* <h1 className={classes.footer_sambhav}>SAMBHAV'23</h1> */}</div>
           </div>
-          <p className={classes.footer_sambhav_description}>
-            Sambhav'23 is One of the Largest Technical festival of Pune. Let&apos;s
-            make a Tech move.
-          </p>
+          <p className={classes.footer_sambhav_description}>Unleash your creativity, embrace community spirit - Join us at Moonstone2K24</p>
           <div className={classes.footer_social_item}>
             <div>
-              <a
-                href={sambhavinsta}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/fluency/48/ffffff/instagram-new.png"
-                  alt=""
-                />
+              <a href={moonstoneinsta} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/fluency/48/ffffff/instagram-new.png" alt="" />
               </a>
             </div>
-            <div>
-              <a
-                href={sambhavlinkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/color/48/ffffff/linkedin-circled--v1.png"
-                  alt=""
-                />
+            {/* <div>
+              <a href={sambhavlinkedin} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/color/48/ffffff/linkedin-circled--v1.png" alt="" />
               </a>{" "}
-            </div>
+            </div> */}
             {/* <div>
               <a
                 href={sambhavtwitter}
@@ -80,82 +53,32 @@ const Footer = () => {
         <div className={classes.footer_first}>
           <div className={classes.footer_sambhav_image_div}>
             <div>
-              <a
-                href={grabbiturl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_grabbit_image}
-                  src={grabbitslogo}
-                  alt="sambhavLogo"
-                ></img>
+              <a href={mediurl} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_grabbit_image} src={medicapslogo} alt="medicapslogo"></img>
               </a>
             </div>
-            <div>
-              {/* <h1 className={classes.footer_sambhav}>GrabBit</h1> */}
-            </div>
+            <div>{/* <h1 className={classes.footer_sambhav}>GrabBit</h1> */}</div>
           </div>
-          <p className={classes.footer_sambhav_description}>
-            Get the latest updates about internships, hackathons, job openings
-            and much more..
-          </p>
+          <p className={classes.footer_sambhav_description}>Where academic excellence meets industry exposure. Building sound professionals for a better society, since 2000.</p>
           <div className={classes.footer_social_item}>
             <div>
-              <a
-                href={grabbitinsta}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/fluency/48/ffffff/instagram-new.png"
-                  alt=""
-                />
+              <a href={mediinsta} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/fluency/48/ffffff/instagram-new.png" alt="" />
               </a>{" "}
             </div>
             <div>
-              <a
-                href={grabbitlinkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/color/48/ffffff/linkedin-circled--v1.png"
-                  alt=""
-                />
+              <a href={medilinkedin} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/color/48/ffffff/linkedin-circled--v1.png" alt="" />
               </a>
             </div>
             <div>
-              <a
-                href={grabbittwitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/fluency/48/ffffff/twitter-circled.png"
-                  alt=""
-                />
+              <a href={meditwitter} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/fluency/48/ffffff/twitter-circled.png" alt="" />
               </a>{" "}
             </div>
             <div>
-              <a
-                href={grabbitwebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.footer_a_link}
-              >
-                <img
-                  className={classes.footer_social_link}
-                  src="https://img.icons8.com/color/48/ffffff/domain--v1.png"
-                  alt="zsdsff"
-                />
+              <a href={mediwebsite} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
+                <img className={classes.footer_social_link} src="https://img.icons8.com/color/48/ffffff/domain--v1.png" alt="zsdsff" />
               </a>
             </div>
           </div>
@@ -172,38 +95,28 @@ const Footer = () => {
           <h2 className={classes.footer_menu_heading}>Contact Us</h2>
           <div className={classes.footer_contact}>
             <div className={classes.footer_contact_item_image}>
-              <img
-                className={classes.footer_contact_image}
-                src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"
-                alt=""
-              />
+              <img className={classes.footer_contact_image} src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="" />
             </div>
             <div>
-              <p>D.Y. Patil College of Engineering, Pune</p>
+              <p>Medi-Caps University, Indore</p>
             </div>
           </div>
           <div className={classes.footer_contact}>
             <div>
-              <img
-                className={classes.footer_contact_image}
-                src="https://img.icons8.com/ios-filled/50/ffffff/outgoing-call.png"
-                alt=""
-              />
+              <img className={classes.footer_contact_image} src="https://img.icons8.com/ios-filled/50/ffffff/outgoing-call.png" alt="" />
             </div>
             <div>
-              <p>7447819903</p>
+              <p>07313111500,07313111501</p>
             </div>
           </div>
           <div className={classes.footer_contact}>
             <div>
-              <img
-                className={classes.footer_contact_image}
-                src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png"
-                alt=""
-              />
+              <img className={classes.footer_contact_image} src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png" alt="" />
             </div>
             <div>
-              <p className={classes.mail}>sambhavdypcoeofficial@gmail.com</p>
+              <p className={classes.mail} src>
+                info@medicaps.ac.in
+              </p>
             </div>
           </div>
         </div>
@@ -211,31 +124,16 @@ const Footer = () => {
       <div className={classes.footer_creator_div}>
         <h4 className={classes.footer_creator}>
           Website designed and created by{" "}
-          <a
-            href={spiderurl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes.footer_a_link}
-          >
+          <a href={spiderurl} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
             @Om Gawande
           </a>{" "}
           ,{" "}
-          <a
-            href={saurabh}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes.footer_a_link}
-          >
+          <a href={saurabh} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
             {" "}
             @Saurabh Barde
           </a>{" "}
           and{" "}
-          <a
-            href={sanyog}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes.footer_a_link}
-          >
+          <a href={sanyog} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
             {" "}
             @Sanyog Mahajan
           </a>{" "}

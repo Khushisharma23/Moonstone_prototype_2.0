@@ -11,6 +11,7 @@ import { HashLink as Link } from "react-router-hash-link";
 // import Dropdown from "./Dropdown";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/Logo.png";
+import medicaps_logo from "../../assets/medi-logo.png";
 import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
 
 const Scroll = require("react-scroll");
@@ -27,24 +28,15 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      className={`${!scrolled ? classes.header : classes.scrolledHeader}`}
-    >
+    <header className={`${!scrolled ? classes.header : classes.scrolledHeader}`}>
       <div className={classes.elements}>
         <div className={classes.logobox}>
-          <Drop
-            activeClass={classes.active}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={600}
-          >
+          <Drop activeClass={classes.active} to="home" spy={true} smooth={true} offset={-100} duration={600}>
             <Link to="/">
               <img src={Logo} alt="/" className={classes.logo} />
             </Link>
             <Link to="/">
-              <img src={"https://www.medicaps.ac.in/resources/img/logo-navbar.png"} alt="/" className={classes.medi_logo} />
+              <img src={medicaps_logo} alt="/" className={classes.medi_logo} />
             </Link>
           </Drop>
         </div>
@@ -52,30 +44,14 @@ const Navbar = () => {
         <div className={classes.navbox}>
           <ul className={classes.nav}>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="home"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop activeClass={classes.active} to="home" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/">
                   Home
                 </Link>
               </Drop>
             </li>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="about"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop activeClass={classes.active} to="about" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/about">
                   About
                 </Link>
@@ -101,30 +77,14 @@ const Navbar = () => {
               </li>
             </Link>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop activeClass={classes.active} to="ambassador" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/leaderboard">
                   Leaderboard
                 </Link>
               </Drop>
             </li>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="contact"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop activeClass={classes.active} to="contact" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/contact">
                   Contact
                 </Link>
@@ -132,11 +92,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="https://grabbits.vercel.app/">
             {/* <button className={classes.btn}>GrabBit</button> */}
             <div className={classes.btn}>
               <GrabBitBtn label="GrabBit" />
@@ -144,24 +100,12 @@ const Navbar = () => {
           </a>
 
           <div className={classes.hamburger} onClick={() => setMobile(!mobile)}>
-            {mobile ? (
-              <FontAwesomeIcon
-                icon={faXmark}
-                style={{ color: "white" }}
-                size="3x"
-              />
-            ) : (
-              <FiMenu size={20} />
-            )}
+            {mobile ? <FontAwesomeIcon icon={faXmark} style={{ color: "white" }} size="3x" /> : <FiMenu size={20} />}
           </div>
         </div>
 
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="https://grabbits.vercel.app/">
             {/* <button className={classes.btn1}>GrabBit</button> */}
             <div className={classes.btn1}>
               <GrabBitBtn label="GrabBit" />
@@ -172,32 +116,14 @@ const Navbar = () => {
 
           <ul className={classes.mobileNav}>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="home"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop onClick={() => setMobile(!mobile)} activeClass={classes.active} to="home" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <HashLink className={classes.homeLink} to="/">
                   Home
                 </HashLink>
               </Drop>
             </li>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="about"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop onClick={() => setMobile(!mobile)} activeClass={classes.active} to="about" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/about">
                   About
                 </Link>
@@ -232,32 +158,14 @@ const Navbar = () => {
               </li>
             </Link>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop onClick={() => setMobile(!mobile)} activeClass={classes.active} to="ambassador" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/leaderboard">
                   Leaderboard
                 </Link>
               </Drop>
             </li>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="contact"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
+              <Drop onClick={() => setMobile(!mobile)} activeClass={classes.active} to="contact" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
                 <Link className={classes.homeLink} to="/contact">
                   Contact
                 </Link>
